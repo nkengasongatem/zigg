@@ -1,6 +1,6 @@
 package com.zigg.eneo.blackouts.entity;
 
-public class BlackoutResquest {
+public class BlackoutRequest {
 
     /**
      * ID of the region eg <code>6</code> for the West Region

@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 
 import com.zigg.eneo.blackouts.control.BlackoutService;
 import com.zigg.eneo.blackouts.entity.BlackoutResponse;
-import com.zigg.eneo.blackouts.entity.BlackoutResquest;
+import com.zigg.eneo.blackouts.entity.BlackoutRequest;
 
 @Path("/api/blackouts")
 @Produces(MediaType.APPLICATION_JSON)
@@ -28,7 +28,7 @@ public class BlackoutResource {
     }
 
     @POST
-    public Response getBlackouts(@Valid BlackoutResquest request) {
+    public Response getBlackouts(@Valid BlackoutRequest request) {
         final BlackoutResponse response = blackoutService.getBlackoutData(request);
         return Response.ok(response).build();
     }
