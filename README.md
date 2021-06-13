@@ -49,6 +49,10 @@ If you want to learn more about building native executables, please consult http
 
 - WebSockets ([guide](https://quarkus.io/guides/websockets)): WebSocket communication channel support
 
+## Generate Zigg banner
+
+- http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Graffiti&t=Zigg
+
 ## Provided examples
 
 ### WebSockets example using Undertow
