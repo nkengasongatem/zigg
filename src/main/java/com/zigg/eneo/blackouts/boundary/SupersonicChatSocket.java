@@ -1,4 +1,4 @@
-package com.zigg.undertowwebsockets;
+package com.zigg.eneo.blackouts.boundary;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -58,5 +58,13 @@ public class SupersonicChatSocket {
             });
         });
     }
+
+    // @Scheduled(every="5s")
+    // void getBlackoutInformation() {
+    // if (sessions != null) {
+    // // search controller
+    // broadcast(String.valueOf("totalOrders"));
+    // }
+    // }
 
 }
