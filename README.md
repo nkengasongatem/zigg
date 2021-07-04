@@ -1,8 +1,6 @@
 # zigg project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+This project uses Quarkus, the Supersonic Subatomic Java Framework to display planned blackouts in different cities in Cameroon.
 
 ## Running the application in dev mode
 
@@ -53,10 +51,12 @@ If you want to learn more about building native executables, please consult http
 
 - http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Graffiti&t=Zigg
 
-## Provided examples
+## Continuous integration
 
-### WebSockets example using Undertow
+`Build`, `test`, and `deploy` the code right from GitHub using `GitHub Actions`
 
-Discover WebSockets using Undertow with this cool supersonic chat example. Open multiple tabs to simulate different users.
-
-[Related guide section...](https://quarkus.io/guides/websockets)
+On every push we,
+1- Build the app to produce a native executable.
+2- Embed the produced executable into an ultra lightweight distroless Docker image (41.7MB).
+3- Push this image to a container registry (TODO).
+4- Deploy this image to the Cloud (TODO).
