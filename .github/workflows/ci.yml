@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v2
       - name: Build Native Executable
-        uses: maxday/quarkus-native-build-docker-action@1
+        uses: maxday/quarkus-native-build-docker-action@13bf5c4ae6942143cf43a5663a6c7f847ac3163c
         with:
           outputName: app-runner
       - name: Upload Native Executable
