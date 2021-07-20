@@ -39,8 +39,8 @@ public class SubcriptionResource {
     }
 
     @OnClose
-    public void onClose(Subscription subscription) {
-        Subscription entity = Subscription.findByEndpoint(subscription.endpoint);
+    public void onClose(String endpoint) {
+        Subscription entity = Subscription.findByEndpoint(endpoint);
         if (entity == null) {
             throw new NotFoundException();
         }
@@ -50,7 +50,7 @@ public class SubcriptionResource {
     @OnError
     public void onError(Subscription subscription, Throwable throwable) {
         LOG.error("Error ", throwable);
-        this.onClose(subscription);
+        this.onClose(subscription.endpoint);
     }
 
     /**
