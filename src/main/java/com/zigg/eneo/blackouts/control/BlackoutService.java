@@ -8,8 +8,10 @@ import javax.json.bind.JsonbBuilder;
 import javax.json.bind.JsonbException;
 
 import com.zigg.eneo.blackouts.boundary.BlackoutRestClient;
+import com.zigg.eneo.blackouts.entity.Blackout;
 import com.zigg.eneo.blackouts.entity.BlackoutRequest;
 import com.zigg.eneo.blackouts.entity.BlackoutResponse;
+import com.zigg.eneo.blackouts.entity.Subscription;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
@@ -30,6 +32,11 @@ public class BlackoutService {
         } catch (Exception exception) {
             throw new JsonbException(exception.getMessage());
         }
+    }
+
+    public BlackoutResponse sendNotification(Subscription subscription, Blackout notification) {
+        LOGGER.info("Sending blackout notification");
+        return null;
     }
 
 }

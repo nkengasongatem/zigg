@@ -7,6 +7,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.zigg.eneo.blackouts.entity.BlackoutResponse;
+import com.zigg.eneo.blackouts.entity.Subscription;
+
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 @Path("/ajaxOutage.php")

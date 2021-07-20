@@ -24,6 +24,7 @@ public class BlackoutResource {
 
     @GET
     public Response get() {
+        // TODO - get all blackouts
         return Response.ok(new BlackoutResponse()).build();
     }
 
