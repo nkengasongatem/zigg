@@ -51,6 +51,9 @@ If you want to learn more about building native executables, please consult http
 
 - http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Graffiti&t=Zigg
 
+## Generate VAPIDKEYS
+- https://vapidkeys.com/
+
 ## Continuous integration
 
 `Build`, `test`, and `deploy` the code right from GitHub using `GitHub Actions`
